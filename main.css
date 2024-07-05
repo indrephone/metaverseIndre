@@ -344,3 +344,60 @@ a {
     }
    
 }
+ /* ^^^^^^^^^^^ CONTACT SEKCIJA^^^^^^^^^^^ */
+
+ #contactTabas{
+      
+    margin: 8px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.contact-text h2 {
+    margin: 0;
+}
+
+.contact-text hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-top: 18x; /* Adjust the margin to position the hr line under the h2 */
+}
+
+.contact-img img {
+    margin-left: auto;
+}
+.contact-media {
+    margin-top: 20px;
+}
+
+.contact-media img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-media p {
+    margin-top: 10px;
+    text-align: left;
+}
+@media (min-width: 768px) {
+    #contactTabas {
+      margin: 10%;
+    }
+   
+}
