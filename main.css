@@ -143,8 +143,8 @@ a {
 /*  =================================
     NEMATOMOS SEKCIJOS -TABAI 
     ================================= */
-
-    #introTabas {
+/* ^^^^^^^^^^^ INTRO SEKCIJA^^^^^^^^^^^ */
+    #introTabas{
       
         margin: 8px;
         padding: 40px;
@@ -224,6 +224,63 @@ a {
    
     @media (min-width: 768px) {
         #introTabas {
+          margin: 10%;
+        }
+       
+    }
+
+    /* ^^^^^^^^^^^ INTRO SEKCIJA^^^^^^^^^^^ */
+    #workTabas{
+      
+        margin: 8px;
+        padding: 40px;
+        background-color: black;
+        color: white;
+        display: none;
+    }
+    
+    .work-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .work-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: auto;
+    }
+    
+    .work-text h2 {
+        margin: 0;
+    }
+    
+    .work-text hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-top: 18x; /* Adjust the margin to position the hr line under the h2 */
+    }
+    
+    .work-img img {
+        margin-left: auto;
+    }
+    .work-media {
+        margin-top: 20px;
+    }
+    
+    .work-media img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .work-media p {
+        margin-top: 10px;
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+        #workTabas {
           margin: 10%;
         }
        
