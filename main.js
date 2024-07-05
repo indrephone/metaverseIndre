@@ -1,4 +1,6 @@
 
+// TOP IMAGE WITH GEM
+
 const canvas = document.querySelector("#Canvas1");
 const ctx = canvas.getContext("2d");
 
@@ -47,3 +49,38 @@ image.onload = () => {
     ctx.stroke();
 };
 
+// LINES SECTION
+
+const canvasLines = document.querySelector("#linesCanvas");
+const ctxLines = canvasLines.getContext("2d");
+
+function drawLines() {
+    const verticalLineLength = 60;
+
+    // Clear the canvas
+    ctxLines.clearRect(0, 0, canvasLines.width, canvasLines.height);
+
+    // Draw the horizontal line extending to the full width of the canvas
+    ctxLines.beginPath();
+    ctxLines.moveTo(0, verticalLineLength);
+    ctxLines.lineTo(canvasLines.width, verticalLineLength);
+    ctxLines.strokeStyle = "#fff";
+    ctxLines.stroke();
+
+    // Draw the vertical line connecting to the buttons section
+    ctxLines.beginPath();
+    ctxLines.moveTo(canvasLines.width / 2, verticalLineLength);
+    ctxLines.lineTo(canvasLines.width / 2, canvasLines.height);
+    ctxLines.strokeStyle = "#fff";
+    ctxLines.stroke();
+}
+
+// Initial draw
+drawLines();
+
+// Redraw on window resize to adjust the lines
+window.addEventListener('resize', () => {
+    // Update canvas size
+    canvasLines.width = window.innerWidth - 60; // Accounting for 30px padding on each side
+    drawLines();
+});
