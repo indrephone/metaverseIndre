@@ -12,10 +12,10 @@
 }
 .roboto-light {
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.8em;
     font-style: normal;
-  
-    letter-spacing: 0.1em; /* add 0.1em gap between letters */
+    letter-spacing: 0.4em; /* add 0.1em gap between letters */
 }
 .roboto-regular {
     font-family: "Roboto", sans-serif;
@@ -91,7 +91,15 @@ a {
     text-decoration-color:  rgb(48, 201, 252);
     color:  rgb(48, 201, 252);
   }
+
+  /* ^^^^^^^^^^^ LINES SEKCIJA^^^^^^^^^^^ */
+#lines {
+    width: calc(100% - 60px); /* 30px padding on each side */
+    margin: auto;
+}
+
 /* ^^^^^^^^^^^ BUTTONS SEKCIJA^^^^^^^^^^^ */
+
 #buttons.roboto-thin button {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -132,8 +140,57 @@ a {
     }
 }
 
-/* ^^^^^^^^^^^ LINES SEKCIJA^^^^^^^^^^^ */
-#lines {
-    width: calc(100% - 60px); /* 30px padding on each side */
-    margin: auto;
-}
+/*  =================================
+    NEMATOMOS SEKCIJOS -TABAI 
+    ================================= */
+
+    #introTabas {
+      
+        margin: 8px;
+        padding: 40px;
+        background-color: black;
+        color: white;
+        /* display: none; */
+    }
+    
+    .intro-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: auto;
+    }
+    
+    .intro-text h2 {
+        margin: 0;
+    }
+    
+    .intro-text hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-top: 18x; /* Adjust the margin to position the hr line under the h2 */
+    }
+    
+    .intro-img img {
+        margin-left: auto;
+    }
+    .intro-media {
+        margin-top: 20px;
+    }
+    
+    .intro-media video {
+        width: 100%;
+        height: auto;
+    }
+    
+    .intro-media p {
+        margin-top: 10px;
+        text-align: left;
+    }
+   
