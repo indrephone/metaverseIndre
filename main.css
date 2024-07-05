@@ -196,6 +196,13 @@ a {
         margin-top: 10px;
         text-align: left;
     }
+    .intro-img img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .intro-img img:hover {
+        transform: rotate(90deg);
+    }
 
     /* Backdrop for modal */
 .modal-backdrop {
@@ -282,6 +289,13 @@ a {
         margin-top: 10px;
         text-align: left;
     }
+    .work-img img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .work-img img:hover {
+        transform: rotate(90deg);
+    }
     @media (min-width: 768px) {
         #workTabas {
           margin: 10%;
@@ -337,6 +351,13 @@ a {
 .about-media p {
     margin-top: 10px;
     text-align: left;
+}
+.about-img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: rotate(90deg);
 }
 @media (min-width: 768px) {
     #aboutTabas {
@@ -395,6 +416,15 @@ a {
     margin-top: 10px;
     text-align: left;
 }
+/* Add this CSS for the rotation effect */
+.contact-img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-img img:hover {
+    transform: rotate(90deg);
+}
+
 @media (min-width: 768px) {
     #contactTabas {
       margin: 10%;
