@@ -1,10 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
     const aboutButton = document.querySelector('#about');
 
     aboutButton.addEventListener('click', () => {
         createAboutModal();
     });
-});
+
 
 function createAboutModal() {
     // Create modal backdrop
@@ -24,7 +23,7 @@ function createAboutModal() {
 
     const h2 = document.createElement('h2');
     h2.classList.add('roboto-light');
-    h2.textContent = 'INTRO';
+    h2.textContent = 'ABOUT';
 
     const hr = document.createElement('hr');
 
