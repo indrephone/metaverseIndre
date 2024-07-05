@@ -25,6 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    margin:0;
     height: auto;
     font-family: "Roboto", sans-serif;
     background-image:url("./media/bg.jpg");
@@ -51,12 +52,14 @@ body::before {
 /* ^^^^^^^^^^^ HEADER SEKCIJA^^^^^^^^^^^ */
 
 header{
-    min-height: 60vh;
+    width: calc(100% - 60px); /* 30px padding on each side */
+    padding: 0 30px;
+    /* height: 50vh; */
+    margin:auto;
     display: flex;
-    flex-direction: column;
-    padding: 30px;
     justify-content: center;
-    align-items: center;
+    width: calc(100% - 60px); /* 30px padding on each side */
+    padding: 0 30px;
 }
 
 /* --------- HERO SEKCIJA METAVERSE ---------- */
