@@ -27,6 +27,7 @@
 /* ^^^^^^^^^^^ BODY bacgroundai ir kt-^^^^^^^^^^^ */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 body {
     margin:0;
@@ -36,10 +37,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-
     text-align: center;
     color: #fff;
     line-height: 1.8;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 body::before {
     content: "";
@@ -51,7 +52,8 @@ body::before {
     background-image: url("./media/bg-overlay.png");
     background-repeat: repeat;
     opacity: 1; 
-    z-index: -1; 
+    z-index: -1;
+    overflow-x: hidden; /* Prevent horizontal scroll */ 
 }
 /* ^^^^^^^^^^^ HEADER SEKCIJA^^^^^^^^^^^ */
 
@@ -123,6 +125,7 @@ a {
     flex-direction: column;
     align-items: stretch;
     margin: 10px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
     }
   
   /* -------  desktop version: lay buttons HORIZONTALIAI ---------- */
@@ -229,7 +232,7 @@ a {
        
     }
 
-    /* ^^^^^^^^^^^ INTRO SEKCIJA^^^^^^^^^^^ */
+    /* ^^^^^^^^^^^ WORK SEKCIJA^^^^^^^^^^^ */
     #workTabas{
       
         margin: 8px;
@@ -285,3 +288,59 @@ a {
         }
        
     }
+ /* ^^^^^^^^^^^ ABOUT SEKCIJA^^^^^^^^^^^ */
+ #aboutTabas{
+      
+    margin: 8px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.about-text h2 {
+    margin: 0;
+}
+
+.about-text hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-top: 18x; /* Adjust the margin to position the hr line under the h2 */
+}
+
+.about-img img {
+    margin-left: auto;
+}
+.about-media {
+    margin-top: 20px;
+}
+
+.about-media img {
+    width: 100%;
+    height: auto;
+}
+
+.about-media p {
+    margin-top: 10px;
+    text-align: left;
+}
+@media (min-width: 768px) {
+    #aboutTabas {
+      margin: 10%;
+    }
+   
+}
