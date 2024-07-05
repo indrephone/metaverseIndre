@@ -31,6 +31,8 @@ html {
 }
 body {
     margin:0;
+    padding:0;
+    box-sizing: border-box;
     height: auto;
     font-family: "Roboto", sans-serif;
     background-image:url("./media/bg.jpg");
@@ -58,12 +60,10 @@ body::before {
 /* ^^^^^^^^^^^ HEADER SEKCIJA^^^^^^^^^^^ */
 
 header{
-    margin:auto;
     display: flex;
     justify-content: center;
-    width: calc(100% - 60px); /* 30px padding on each side */
-    margin: auto;
 }
+
 
 /* --------- HERO SEKCIJA METAVERSE ---------- */
 #hero{
@@ -96,7 +96,8 @@ a {
 
   /* ^^^^^^^^^^^ LINES SEKCIJA^^^^^^^^^^^ */
 #lines {
-    width: calc(100% - 60px); /* 30px padding on each side */
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
 
@@ -112,7 +113,7 @@ a {
     border: 1px solid #fff; /* thin white border */
     background: none; 
     color: #fff;/* no background */
-    padding: 10px 20px; /* add padding */
+    padding: 15px 20px; /* add padding */
     width: 100%; /* make buttons full-width */
     box-sizing: border-box; 
   }
@@ -123,9 +124,10 @@ a {
   #buttons {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    margin: 10px;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    /* overflow-x: hidden; */
     }
   
   /* -------  desktop version: lay buttons HORIZONTALIAI ---------- */
